@@ -87,33 +87,109 @@
             <li><strong>Account data.</strong> You can use the app as a guest. We create a random device identifier so that you keep your creations and credits. If you sign in with Google or Apple, we also receive the name and email address that provider shares with us.</li>
             <li><strong>Content you submit.</strong> The photos you choose, the text, numbers and options you enter for a theme.</li>
             <li><strong>Content we create for you.</strong> The images, and the music track where a theme has one, that the app generates from your input.</li>
-            <li><strong>Purchase information.</strong> If you buy credits or a subscription, the app store (Google Play or the App Store) handles payment. We receive the purchase status, not your payment card details.</li>
+            <li><strong>Purchase information.</strong> If you buy credits or a subscription, the app store (Google Play or the App Store) handles payment and RevenueCat manages the purchase for us. We receive the purchase status and an app user ID, not your payment card details.</li>
             <li><strong>Technical data.</strong> Basic information sent with every request, such as your approximate country (derived from your connection), device and app version, and server logs used to keep the service running and to find problems.</li>
+            <li><strong>Usage and analytics data.</strong> Which screens and features you use, app opens, device model, operating system and app version, and identifiers such as a Firebase installation ID and your device's advertising ID, collected through Firebase Analytics.</li>
+            <li><strong>Crash reports.</strong> If the app crashes, Firebase Crashlytics collects the error details and the state of the device at that moment.</li>
+            <li><strong>Advertising and install data.</strong> The Facebook SDK (Meta) records app installs and some app events, and can use device and advertising identifiers, so we can measure how well our ads work.</li>
           </ul>
 
           <h2 id="use">3. How we use it</h2>
           <ul>
             <li>To create your images and music, and show them to you in the app.</li>
             <li>To manage your credits, refunds for failed creations, and subscriptions.</li>
-            <li>To keep the service secure, prevent abuse and fix problems.</li>
+            <li>To keep the service secure, prevent abuse and fix problems, including by analyzing usage and crash reports.</li>
+            <li>To measure and improve our advertising.</li>
             <li>To answer your support requests.</li>
             <li>To meet legal obligations.</li>
           </ul>
-          <p>We do not sell your personal data, and we do not use your photos for advertising.</p>
+          <p>We do not sell your personal data, and we do not use your photos for advertising or analytics.</p>
 
           <h2 id="ai">4. AI processing</h2>
           <p>To create your images, your photos and options are sent securely from our servers to an AI image generation provider (currently OpenAI). They are used to produce your result. We do not use your photos to train our own models. The provider handles the data under its own terms and privacy policy, and we ask you to review them.</p>
           <p>AI results can be unexpected or inaccurate, and may not be unique. Please read our <a href="/terms-of-use/">Terms of Use</a>.</p>
 
-          <h2 id="share">5. Who we share it with</h2>
-          <p>We share data only with companies that help us run the app, and only as needed:</p>
-          <ul>
-            <li><strong>AI image provider</strong> (OpenAI) to generate your images.</li>
-            <li><strong>Cloud hosting and storage</strong> (Amazon Web Services) to store your photos and creations, and to run our servers and database.</li>
-            <li><strong>Google and Apple</strong>, if you choose to sign in with them or buy through their stores.</li>
-            <li><strong>Authorities</strong>, when the law requires it or to protect our users and the service.</li>
-          </ul>
+          <h2 id="share">5. Who we share it with, and the services we use</h2>
+          <p>We share data only with companies that help us run the app, and only as needed. Each of them handles the data under its own terms and privacy policy, which we encourage you to read:</p>
+          <ul class="my-5 grid list-none gap-3 space-y-0 !pl-0 sm:grid-cols-2">
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">RevenueCat</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Manages in-app purchases and subscriptions. Receives your purchase details and an app user ID.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://www.revenuecat.com/terms/" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://www.revenuecat.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">Firebase</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Google's app platform that we use for app services and configuration.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://firebase.google.com/terms" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">Firebase Analytics</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Shows us how the app is used (screens, actions, device and app version) so we can improve it.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://firebase.google.com/terms/analytics" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">Firebase Crashlytics</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Collects crash reports (error details and device state) so we can fix problems.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://firebase.google.com/terms/crashlytics" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">Facebook SDK (Meta)</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Measures app installs and events for advertising attribution. It can use device and advertising identifiers.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">OpenAI</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Creates your images from the photos and options you submit.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://openai.com/policies/terms-of-use/" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://openai.com/policies/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">AWS S3 (Amazon Web Services)</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Stores your photos and your creations.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://aws.amazon.com/service-terms/" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://aws.amazon.com/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+              <li class="rounded-xl border border-line bg-surface p-4">
+                <p class="font-semibold text-white">Hetzner (Germany)</p>
+                <p class="mt-1 text-sm leading-6 text-zinc-300">Hosts our servers and database in Germany.</p>
+                <p class="mt-3 text-sm font-medium">
+                  <a href="https://www.hetzner.com/legal/terms-and-conditions/" target="_blank" rel="noopener noreferrer">Terms</a>
+                  <span class="px-1 text-muted">/</span>
+                  <a href="https://www.hetzner.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+                </p>
+              </li>
+            </ul>
+          <p>We also share data with Google and Apple if you choose to sign in with them or buy through their stores, and with authorities when the law requires it or to protect our users and the service.</p>
           <p>If we ever merge with or are acquired by another company, your data may move with the service, and we will tell you if that changes how it is handled.</p>
+
+          <h3>Analytics, crash reports and advertising measurement</h3>
+          <p>Firebase Analytics, Firebase Crashlytics and the Facebook SDK collect the usage, crash and install data described above. We use it to understand and improve the app and to measure our advertising, not to read your photos. Where the law requires your consent for this (for example in the European Economic Area or the United Kingdom), we ask for it, and you can withdraw it at any time. You can also limit ad tracking or reset your advertising ID in your device's settings, or contact us to opt out.</p>
 
           <h2 id="keep">6. Storage and retention</h2>
           <ul>
@@ -142,7 +218,7 @@
           <p>We use encrypted connections, access controls and private storage for uploaded photos. No system is completely secure, but we work to protect your data and fix problems quickly.</p>
 
           <h2 id="transfers">11. International transfers</h2>
-          <p>Our providers may process data in countries other than yours. Where required, we rely on safeguards such as standard contractual clauses to protect it.</p>
+          <p>Our servers and database run in Germany (Hetzner), and some of our providers (such as OpenAI, Amazon Web Services, Google and Meta) may process data in other countries, including the United States. Where required, we rely on safeguards such as standard contractual clauses to protect it.</p>
 
           <h2 id="changes">12. Changes</h2>
           <p>We may update this policy. When we make an important change, we will update the date at the top and, where appropriate, tell you in the app.</p>
